@@ -15,7 +15,7 @@ import { useForecast } from "../../contexts/ForecastContext";
 function TimeSeriesChart({ getData }) {
   const { loading: sendingARIMA, addDataARIMA } = useSendDataForARIMA();
   const { loading: sendingSARIMA, addDataSARIMA } = useSendDataForSARIMA();
-  const { model, setModel, series, setSeries } = useForecast();
+  const { model, series } = useForecast();
   const navigate = useNavigate();
   const { loading, data = [] } = getData();
 

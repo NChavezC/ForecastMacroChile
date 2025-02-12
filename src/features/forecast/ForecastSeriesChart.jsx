@@ -18,7 +18,7 @@ import { useSendDataForARIMA } from "../plot/useSendDataForARIMA";
 import Papa from "papaparse";
 
 function ForecastSeriesChart({ getData }) {
-  const { series, setSeries, model, setModel } = useForecast();
+  const { series, model } = useForecast();
   const { forecast = [] } = useForecast();
 
   const { loading, data = [] } = getData();
